@@ -21,9 +21,11 @@ Centralizar materiais úteis para consulta rápida:
 │   │   └── metricas-repositorio.sh
 │   └── tutoriais/
 │       └── git-worktree.md
-└── github/
-    └── tutoriais/
-        └── github-actions.md
+├── github/
+│   └── tutoriais/
+│       └── github-actions.md
+└── prompts/
+    └── validador-analise-arquiteto.md
 ```
 
 ## Conteúdos
@@ -53,6 +55,15 @@ Centralizar materiais úteis para consulta rápida:
 - Filtrar PRs por autor: `./git/recursos/metricas-repositorio.sh danielsmanioto`
 
 Observação: as métricas de PR usam `gh` (GitHub CLI) autenticado.
+
+### Prompts e Validadores
+
+#### Validador: Análise de Código (Arquiteto Sênior)
+
+- Arquivo: [prompts/validador-analise-arquiteto.md](prompts/validador-analise-arquiteto.md)
+- Checklist com 72 pontos de análise técnica e arquitetural
+- Cobre: estrutura, Git, qualidade, testes, dependências, docs, CI/CD, segurança, performance, observabilidade
+- Use para avaliar projetos próprios ou de equipes
 
 ## Próximas ideias
 
