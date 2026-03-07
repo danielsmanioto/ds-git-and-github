@@ -1,20 +1,42 @@
-# ds-git-and-github
+<div align="center">
 
-Repositório de estudos e referência prática sobre **Git** e **GitHub**.
+# 🚀 ds-git-and-github
 
-## Objetivo
+**Repositório de estudos e referência prática sobre Git e GitHub**
+
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions)
+[![Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
+[![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](https://www.markdownguide.org/)
+
+[![Licença MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-blue?style=flat-square)](LICENSE)
+[![Contribuições bem-vindas](https://img.shields.io/badge/contribui%C3%A7%C3%B5es-bem--vindas-brightgreen?style=flat-square)](https://github.com/danielsmanioto/ds-git-and-github/issues)
+[![Mantido](https://img.shields.io/badge/mantido-sim-success?style=flat-square)](https://github.com/danielsmanioto/ds-git-and-github/commits/main)
+
+</div>
+
+---
+
+## 📖 Sobre
+
+Este repositório reúne materiais práticos de estudo e referência sobre **Git** e **GitHub**, organizados para facilitar a consulta no dia a dia de desenvolvimento.
+
+## 🎯 Objetivo
 
 Centralizar materiais úteis para consulta rápida:
 
-- comandos de Git mais usados;
-- tutoriais práticos (ex.: `git worktree`);
-- automações com GitHub Actions.
+- 📌 Comandos de Git mais usados
+- 📚 Tutoriais práticos (ex.: `git worktree`)
+- ⚙️ Automações com GitHub Actions
+- 🤖 Prompts e validadores de qualidade de código
 
-## Estrutura do projeto
+## 🗂️ Estrutura do projeto
 
 ```text
 .
 ├── README.md
+├── comandos-uteis.md
 ├── git/
 │   ├── recursos/
 │   │   ├── apagar-branches-remotas.sh
@@ -28,46 +50,87 @@ Centralizar materiais úteis para consulta rápida:
     └── validador-analise-arquiteto.md
 ```
 
-## Conteúdos
+## 📚 Conteúdos
 
-### Git
+### 🐙 Git
 
-- Tutorial: [Git Worktree](git/tutoriais/git-worktree.md)
-- Script: [Apagar branches remotas (exceto main/develop)](git/recursos/apagar-branches-remotas.sh)
-- Script: [Métricas do repositório (commits e PRs)](git/recursos/metricas-repositorio.sh)
+| Recurso | Tipo | Descrição |
+|---------|------|-----------|
+| [Comandos Úteis](comandos-uteis.md) | 📋 Referência | Guia rápido com os principais comandos do dia a dia |
+| [Git Worktree](git/tutoriais/git-worktree.md) | 📖 Tutorial | Como trabalhar com múltiplas branches simultaneamente |
+| [Apagar Branches Remotas](git/recursos/apagar-branches-remotas.sh) | 🔧 Script | Remove branches remotas, exceto `main` e `develop` |
+| [Métricas do Repositório](git/recursos/metricas-repositorio.sh) | 📊 Script | Gera métricas de commits e Pull Requests |
 
-### GitHub
+### 🐱 GitHub
 
-- Tutorial: [GitHub Actions](github/tutoriais/github-actions.md)
+| Recurso | Tipo | Descrição |
+|---------|------|-----------|
+| [GitHub Actions](github/tutoriais/github-actions.md) | 📖 Tutorial | Automações e pipelines de CI/CD |
 
-### Scripts de recursos (Git)
+### 🤖 Prompts e Validadores
 
-#### 1) Apagar branches remotas (mantendo main e develop)
+| Recurso | Tipo | Descrição |
+|---------|------|-----------|
+| [Validador: Análise de Arquiteto](prompts/validador-analise-arquiteto.md) | ✅ Checklist | 72 pontos de análise técnica e arquitetural |
 
-- Arquivo: [git/recursos/apagar-branches-remotas.sh](git/recursos/apagar-branches-remotas.sh)
-- Modo seguro (simulação): `./git/recursos/apagar-branches-remotas.sh`
-- Aplicar de fato: `./git/recursos/apagar-branches-remotas.sh origin --apply`
+---
 
-#### 2) Métricas do repositório
+## 🔧 Scripts de recursos
 
-- Arquivo: [git/recursos/metricas-repositorio.sh](git/recursos/metricas-repositorio.sh)
-- Executar: `./git/recursos/metricas-repositorio.sh`
-- Filtrar PRs por autor: `./git/recursos/metricas-repositorio.sh danielsmanioto`
+### 1️⃣ Apagar branches remotas (mantendo `main` e `develop`)
 
-Observação: as métricas de PR usam `gh` (GitHub CLI) autenticado.
+```bash
+# Modo seguro (simulação — não aplica nenhuma alteração)
+./git/recursos/apagar-branches-remotas.sh
 
-### Prompts e Validadores
+# Aplicar de fato
+./git/recursos/apagar-branches-remotas.sh origin --apply
+```
 
-#### Validador: Análise de Código (Arquiteto Sênior)
+### 2️⃣ Métricas do repositório
 
-- Arquivo: [prompts/validador-analise-arquiteto.md](prompts/validador-analise-arquiteto.md)
-- Checklist com 72 pontos de análise técnica e arquitetural
-- Cobre: estrutura, Git, qualidade, testes, dependências, docs, CI/CD, segurança, performance, observabilidade
-- Use para avaliar projetos próprios ou de equipes
+```bash
+# Exibir todas as métricas
+./git/recursos/metricas-repositorio.sh
 
-## Próximas ideias
+# Filtrar PRs por autor
+./git/recursos/metricas-repositorio.sh danielsmanioto
+```
 
-- Pull Request templates
-- Conventional Commits
-- Estratégias de branching (`main`, `develop`, `release`)
-- Boas práticas de revisão de código
+> ⚠️ **Observação:** As métricas de PR utilizam `gh` (GitHub CLI) autenticado.
+
+---
+
+## ✅ Prompts e Validadores
+
+### Validador: Análise de Código (Arquiteto Sênior)
+
+- 📄 Arquivo: [prompts/validador-analise-arquiteto.md](prompts/validador-analise-arquiteto.md)
+- ✅ Checklist com **72 pontos** de análise técnica e arquitetural
+- 🔍 Cobre: estrutura, Git, qualidade, testes, dependências, docs, CI/CD, segurança, performance e observabilidade
+- 💡 Use para avaliar projetos próprios ou de equipes
+
+---
+
+## 🚧 Próximas ideias
+
+- [ ] Pull Request templates
+- [ ] Conventional Commits
+- [ ] Estratégias de branching (`main`, `develop`, `release`)
+- [ ] Boas práticas de revisão de código
+
+---
+
+## 👤 Autor
+
+**Daniel Smanioto**
+
+[![GitHub](https://img.shields.io/badge/GitHub-danielsmanioto-181717?style=flat-square&logo=github)](https://github.com/danielsmanioto)
+
+---
+
+<div align="center">
+
+Feito com ❤️ para a comunidade de desenvolvedores
+
+</div>
