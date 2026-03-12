@@ -72,3 +72,13 @@ git worktree remove ../nomebranch
 git clone --bare git@github.com:danielsmanioto/ds-git-and-github.git .git
 ```
 
+```bash
+git worktree add main main
+```
+
+```bash
+git worktree add develop develop
+```
+
+
+
