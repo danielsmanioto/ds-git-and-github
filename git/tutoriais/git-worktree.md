@@ -39,3 +39,24 @@ git worktree prune
 - Nomeie as pastas com contexto (`projeto-feature-x`).
 - Faça commit antes de remover worktree.
 - Use junto com branches curtas e focadas.
+
+# Executando worktreee real
+```bash
+mkdir git
+```
+
+```bash
+git clone git@github.com:danielsmanioto/ds-git-and-github.git 
+```
+
+```
+cd ds-git-and-github 
+```
+
+```bash
+git worktree add ../nomebranch -b hotfix/nomebranch  
+```
+
+```bash
+git worktree list 
+```
