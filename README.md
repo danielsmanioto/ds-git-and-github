@@ -58,6 +58,7 @@ Centralizar materiais úteis para consulta rápida:
 |---------|------|-----------|
 | [Comandos Úteis](comandos-uteis.md) | 📋 Referência | Guia rápido com os principais comandos do dia a dia |
 | [Git Worktree](git/tutoriais/git-worktree.md) | 📖 Tutorial | Como trabalhar com múltiplas branches simultaneamente |
+| [Git Worktree no VS Code](git/tutoriais/git-worktree-multiplos-vs-code.md) | 📖 Tutorial | Como usar múltiplas worktrees no Visual Studio Code |
 | [Apagar Branches Remotas](git/recursos/apagar-branches-remotas.sh) | 🔧 Script | Remove branches remotas, exceto `main` e `develop` |
 | [Métricas do Repositório](git/recursos/metricas-repositorio.sh) | 📊 Script | Gera métricas de commits e Pull Requests |
 

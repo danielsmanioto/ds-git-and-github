@@ -60,3 +60,7 @@ git worktree add ../nomebranch -b hotfix/nomebranch
 ```bash
 git worktree list 
 ```
+
+```bash
+git worktree remove ../nomebranch
+```
