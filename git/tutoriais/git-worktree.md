@@ -36,6 +36,7 @@ git worktree prune
 
 ## Boas práticas
 
+- Use bare repository para organizar
 - Nomeie as pastas com contexto (`projeto-feature-x`).
 - Faça commit antes de remover worktree.
 - Use junto com branches curtas e focadas.
