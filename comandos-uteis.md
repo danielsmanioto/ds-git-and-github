@@ -131,7 +131,18 @@ Guia rápido com comandos práticos para o dia a dia.
 - `git cat-file -p pasta+hash`
 - `git cat-file -p f066f6f33c4333301e09bc0f01ed9a0e050ceb25`
 
-## 13) Exemplo de .gitignore
+## 13) Git worktree
+
+- `git worktree list`
+- `git worktree add ../nome-da-pasta nome-da-branch`
+- `git worktree add -b nova-branch ../nome-da-pasta`
+- `git worktree remove ../nome-da-pasta`
+- `git worktree prune`
+- `git worktree move ../pasta-antiga ../pasta-nova`
+- `git worktree lock ../nome-da-pasta`
+- `git worktree unlock ../nome-da-pasta`
+
+## 14) Exemplo de .gitignore
 
 ```gitignore
 .classpath
