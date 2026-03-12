@@ -66,7 +66,7 @@ git worktree list
 git worktree remove ../nomebranch
 ```
 
-# Clone com bare
+# Clone com bare / boas praticas
 
 ```bash
 git clone --bare git@github.com:danielsmanioto/ds-git-and-github.git .git
