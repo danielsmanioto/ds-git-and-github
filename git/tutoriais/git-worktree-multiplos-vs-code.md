@@ -11,3 +11,5 @@ Para usar `git worktree`, o que realmente importa é:
 - adicionar várias worktrees ao mesmo workspace
 - scm source controle 
 - sete a opcao single
+- ative a opcao repositorio em source controle
+- pronto
